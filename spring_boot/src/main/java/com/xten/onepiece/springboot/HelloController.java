@@ -1,4 +1,4 @@
-package com.xten.onepiece.undertow.springboot;
+package com.xten.onepiece.springboot;
 
 
 import org.springframework.web.bind.annotation.RequestMapping;
