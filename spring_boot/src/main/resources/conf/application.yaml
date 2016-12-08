@@ -1,0 +1,10 @@
+# VELOCITY TEMPLATES (VelocityAutoConfiguration)spring:
+  velocity:
+    charset: UTF-8
+    resourceLoaderPath: classpath:/templates/
+
+  spring.devtools.restart.exclude=static/**,public/**
+  spring:
+    devtools:
+      restart:
+        exclude: templates/**

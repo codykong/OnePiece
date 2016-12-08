@@ -1,8 +1,10 @@
 package com.xten.onepiece.springboot;
 
 
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.ModelAndView;
 
 /**
  * Created with IntelliJ IDEA.
@@ -14,7 +16,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloController {
 
     @RequestMapping("/hello")
-    public String index(){
-        return "Hello World";
+    public ModelAndView index(Model model){
+        model.addAttribute("httpapis", "a");
+        return new ModelAndView("index");
     }
 }
