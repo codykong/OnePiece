@@ -1,0 +1,17 @@
+# Maven
+target/
+*.ser
+*.ec
+
+# IntelliJ Idea
+.idea/
+out/
+*.ipr
+*.iws
+*.iml
+
+# OS X
+.DS_Store
+
+主要配置文件
+important.yaml
