@@ -72,5 +72,45 @@
         </plugins>
     </build>
 
+    <profiles>
+        <profile>
+            <id>local</id>
+            <!--这里设置为默认以便本地测试-->
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <build>
+                <resources>
+                    <resource>
+                        <directory>src/main/profiles/local</directory>
+                    </resource>
+
+                    <resource>
+                        <directory>src/main/resources</directory>
+                        <!--<filtering>false</filtering>-->
+                    </resource>
+                </resources>
+            </build>
+        </profile>
+
+        <profile>
+            <id>prod</id>
+            <build>
+                <resources>
+                    <resource>
+                        <directory>src/main/profiles/prod</directory>
+                    </resource>
+
+                    <resource>
+                        <directory>src/main/resources</directory>
+                        <!--<filtering>false</filtering>-->
+                    </resource>
+                </resources>
+            </build>
+        </profile>
+
+
+    </profiles>
+
 
 </project>

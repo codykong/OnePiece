@@ -1,0 +1,21 @@
+<!-- Logback configuration. See http://logback.qos.ch/manual/index.html -->
+<configuration scan="true" scanPeriod="10 seconds">
+    <!--<include resource="org/springframework/boot/logging/logback/base.xml" />-->
+    <!--<logger name="org.springframework.web" level="DEBUG"/>-->
+    <appender name="ConsoleAppender" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <Pattern>.%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg %n</Pattern>
+        </encoder>
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>INFO</level>
+        </filter>
+    </appender>
+
+    <root level="INFO">
+        <appender-ref ref="ConsoleAppender" />
+    </root>
+
+    <!--如果添加其他的appender,则本设置失效,具体原因待查-->
+    <logger name = "org.springframework" level = "ERROR" />
+
+</configuration>
