@@ -1,7 +1,7 @@
 package com.xten.op.akka.remote
 
 import akka.actor.Actor
-import com.xten.op.akka.AkkaUtils
+import com.xten.op.akka.util.AkkaUtils
 import org.slf4j.LoggerFactory
 
 
@@ -12,7 +12,6 @@ class RemoteActor extends Actor {
 
   override def preStart() = {
     println("AkkaActor:"+this.getClass.getClassLoader)
-    LOGGER.info(s"path is ${AkkaUtils.remotePath()}")
   }
 
   override def receive = {

@@ -4,8 +4,8 @@ import java.util.concurrent.TimeUnit
 
 import akka.actor.SupervisorStrategy.{Restart, Stop}
 import akka.actor.{Actor, OneForOneStrategy, Props, SupervisorStrategy}
-import com.xten.op.akka.AkkaUtils
 import com.xten.op.akka.remote.RemoteApp.system
+import com.xten.op.akka.util.AkkaUtils
 import org.slf4j.LoggerFactory
 
 import scala.concurrent.duration.{Duration, FiniteDuration}

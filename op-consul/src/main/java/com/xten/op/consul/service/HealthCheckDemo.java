@@ -1,4 +1,4 @@
-package com.xten.op.consul.health;
+package com.xten.op.consul.service;
 
 import com.orbitz.consul.cache.ConsulCache;
 import com.orbitz.consul.cache.ServiceHealthCache;

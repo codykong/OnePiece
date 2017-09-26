@@ -9,19 +9,17 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>undertow</artifactId>
+    <artifactId>op-undertow</artifactId>
 
     <dependencies>
         <dependency>
             <groupId>io.undertow</groupId>
             <artifactId>undertow-core</artifactId>
-            <version>1.0.0.Beta29</version>
         </dependency>
 
         <dependency>
             <groupId>io.undertow</groupId>
             <artifactId>undertow-servlet</artifactId>
-            <version>1.0.0.Beta29</version>
         </dependency>
     </dependencies>
 

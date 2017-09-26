@@ -1,7 +1,5 @@
-package com.xten.op.consul.health;
+package com.xten.op.consul.service;
 
-import com.orbitz.consul.AgentClient;
-import com.orbitz.consul.HealthClient;
 import com.orbitz.consul.NotRegisteredException;
 import com.xten.op.consul.ConsulService;
 

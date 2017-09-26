@@ -4,6 +4,7 @@ import java.util
 
 import akka.actor.{ActorContext, ActorPath, ActorRef, ActorSelection, ActorSystem, ExtendedActorSystem, Extension, ExtensionKey, Props}
 import com.typesafe.config.{Config, ConfigFactory}
+import com.xten.op.akka.util.AkkaUtils
 import org.jboss.netty.logging.{InternalLoggerFactory, Slf4JLoggerFactory}
 import org.slf4j.LoggerFactory
 
@@ -59,14 +60,14 @@ object AkkaUtils {
   }
 
 
-  def parseConfig(args: (String,Any)*) : Config={
-    val map = new util.HashMap[String,Any]()
-
-    for (arg <- args){
-      map.put(arg._1,arg._2)
-    }
-    ConfigFactory.parseMap(map)
-  }
+//  def parseConfig(args: (String,Any)*) : Config={
+//    val map = new util.HashMap[String,Any]()
+//
+//    for (arg <- args){
+//      map.put(arg._1,arg._2)
+//    }
+//    ConfigFactory.parseMap(map)
+//  }
 
 
 

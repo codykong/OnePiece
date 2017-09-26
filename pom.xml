@@ -11,7 +11,7 @@
     <modules>
         <module>spring_boot</module>
         <module>tool</module>
-        <module>undertow</module>
+        <module>op-undertow</module>
         <module>op-drools</module>
         <module>op-algorithm</module>
         <module>op-common</module>
@@ -43,6 +43,18 @@
     <dependencyManagement>
         <dependencies>
 
+
+            <dependency>
+                <groupId>io.undertow</groupId>
+                <artifactId>undertow-core</artifactId>
+                <version>1.4.20.Final</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.undertow</groupId>
+                <artifactId>undertow-servlet</artifactId>
+                <version>1.4.20.Final</version>
+            </dependency>
 
             <dependency>
                 <groupId>com.xten</groupId>

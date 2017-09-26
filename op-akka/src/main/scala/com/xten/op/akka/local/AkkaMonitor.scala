@@ -4,7 +4,7 @@ import java.util.concurrent.TimeUnit
 
 import akka.actor.{Actor, ActorRef, ActorSelection, Props}
 import akka.util.Timeout
-import com.xten.op.akka.{AkkaUtils, RemoteAddressExtension}
+import com.xten.op.akka.RemoteAddressExtension
 import com.xten.op.akka.remote.BaseFact
 import org.slf4j.LoggerFactory
 
