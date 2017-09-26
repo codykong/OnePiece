@@ -1,0 +1,9 @@
+package com.xten.drools.fact
+
+rule "run"
+    when
+        c: BaseFact(status in (1,2,3))
+    then
+        c.setRes(true);
+        System.out.println(c.isRes());
+end

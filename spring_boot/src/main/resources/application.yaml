@@ -1,0 +1,23 @@
+# VELOCITY TEMPLATES (VelocityAutoConfiguration)spring:
+velocity:
+  charset: UTF-8
+  resourceLoaderPath: classpath:/templates/
+
+spring:
+  devtools:
+    restart:
+      exclude: templates/**,static/**,public/**
+  datasource:
+      name: mysqldb
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&characterEncoding=utf8
+      username: root
+      password: 321
+
+# 日志相关
+logging:
+#  config: classpath:logback-spring.xml
+  path: ~/logs
+
+mybatis:
+  config-location: classpath:mybatis-config.xml

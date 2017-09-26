@@ -1,0 +1,8 @@
+package com.xten.drools.duplicate
+
+rule "run"
+    when
+        c: DuplicateFact(id==1)
+    then
+        c.setRes(11);
+end
